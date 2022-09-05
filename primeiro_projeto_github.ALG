@@ -23,6 +23,20 @@ Inicio
       fimse
 fimprocedimento
 
+procedimento exameColesterol(colesterol: real)
+
+Inicio
+      se colesterol <= 200 entao
+         escreval("Classificação: Desejavel")
+      senao
+         se (colesterol > 200) e (colesterol <=240) entao
+            escreval("Classificação: Limiar")
+         senao
+            escreval("Classificação: Elevado")
+         fimse
+      fimse
+fimprocedimento
+
 Algoritmo "primeiro_projeto_github"
 
 Var
@@ -37,5 +51,8 @@ Inicio
       escreva("Medida de triglicerídeos: ")
       leia(vTriglicerideos)
       exameTriglicerideos(vTriglicerideos)
+      escreva("Medida de colesterol: ")
+      leia(vColesterol)
+      exameColesterol(vColesterol)
 
 Fimalgoritmo
