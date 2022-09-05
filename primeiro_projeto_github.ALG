@@ -12,6 +12,16 @@ Inicio
       fimse
 fimprocedimento
 
+procedimento exameTriglicerideos(triglicerideos: real)
+
+Inicio
+
+      se triglicerideos <= 200 entao
+         escreval("Classificação: Desejável")
+      senao
+         escreval("Classificação: Aumentado")
+      fimse
+fimprocedimento
 
 Algoritmo "primeiro_projeto_github"
 
@@ -24,6 +34,8 @@ Inicio
       escreva("Medida de glicose: ")
       leia(vGlicose)
       exameGlicose(vGlicose)
-
+      escreva("Medida de triglicerídeos: ")
+      leia(vTriglicerideos)
+      exameTriglicerideos(vTriglicerideos)
 
 Fimalgoritmo
